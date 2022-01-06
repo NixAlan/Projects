@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="header">
+            <p> Total Expenses <span id="total-exp"></span> </p>
+            <div class="wrapper">
+                <!-- <label for="period-1-income">Period 1 Income</label>
+                <input type="number" id="period-1-income"> -->
+            </div>
+            <!-- <p>Period 2 Income <span class="period-2-income">2000</span></p> -->
+        </div>
+        <div class="main">
+            <table>
+                <tr>
+                    <th>Budget Item</th>
+                    <th>Type</th>
+                    <th>Budgeted</th>
+                    <th>Income remaining</th>
+                </tr>
+                <tr>
+                    <td>Tithes</td>
+                    <td class = "type">Cash</td>
+                    <td ><input class="exp" value="125" type="number"></td>
+                    <td class="remaining"></td>
+                </tr>
+                <tr>
+                    <td>Mortgage</td>
+                    <td class = "type">Checking</td>
+                    <td ><input class="exp" value="805" type="number"></td>
+                    <td class="remaining"></td>
+                </tr>
+                <tr>
+                    <td>Electricity</td>
+                    <td class = "type">Checking</td>
+                    <td ><input class="exp" value="200" type="number"></td>
+                    <td class="remaining"></td>
+                </tr>
+                <tr>
+                    <td>Trash</td>
+                    <td class = "type">Credit Card Payment</td>
+                    <td ><input class="exp" value="30" type="number"></td>
+                    <td class="remaining"></td>
+                </tr>
+                <tr>
+                    <td>internet</td>
+                    <td class = "type">Credit Card Payment</td>
+                    <td ><input class="exp" value="60" type="number"></td>
+                    <td class="remaining"></td>
+                </tr>
+                <tr>
+                    <td>Cell Phones</td>
+                    <td class = "type">Credit Card Payment</td>
+                    <td ><input class="exp" value="90" type="number"></td>
+                    <td class="remaining"></td>
+                </tr>
+                <tr>
+                    <td>Auto Insurance</td>
+                    <td class = "type">Checking</td>
+                    <td ><input class="exp" value="140" type="number"></td>
+                    <td class="remaining"></td>
+                </tr>
+                <tr>
+                    <td>Toiletries</td>
+                    <td class = "type">Cash</td>
+                    <td ><input class="exp" value="50" type="number"></td>
+                    <td class="remaining"></td>
+                </tr>
+                <tr>
+                    <td>Food</td>
+                    <td class = "type">Cash</td>
+                    <td ><input class="exp" value="800" type="number"></td>
+                    <td class="remaining"></td>
+                </tr>
+                <tr>
+                    <td>Gas</td>
+                    <td class = "type">Cash</td>
+                    <td ><input class="exp" value="150" type="number"></td>
+                    <td class="remaining"></td>
+                </tr>
+                <tr>
+                    <td>Allowance</td>
+                    <td class = "type">Cash</td>
+                    <td ><input class="exp" value="80" type="number"></td>
+                    <td class="remaining"></td>
+                </tr>
+            </table>
+            <button onclick="calculatebudget()">Calculate</button>
+        </div>
+        <div class="footer">
+            <div class="report-Currencie">
+                <p>Correct change for cash</p>
+                <p id = report-hundreads ></p>
+                <p id = report-fifties ></p>
+                <p id = report-twentys ></p>
+                <p id = report-tens ></p>
+                <p id = report-fives ></p>
+                <p id = report-ones ></p>
+            </div>
+            <div class="totals">
+                <p>Total for each Budget Item Type</p>
+                <p id="cash-total"></p>
+                <p id="checking-total"></p>
+                <p id="credit-card-payments-total"></p>
+                <p>Total Items should Equal Total Expenses</p>
+                <p id="sum-totals"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

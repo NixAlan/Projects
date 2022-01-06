@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+}
+button{
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+}
+table{
+    /* margin: 0 auto; */
+    border: 2px solid black;
+}
+.page-container{
+    width: 1000px;
+    background-color: lightgray;
+    margin: 0 auto;
+    padding: 25px;
+}
+.header{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.main{
+    margin-top: 100px;
+}
+.footer{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+.report-Currencie{
+    border: 2px solid black;
+    height: 130px;
+    padding: 5px;
+}
+.totals{
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 130px;
+    padding: 5px;
+}
